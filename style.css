@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("bg-img.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: transparent;
+    border: 2px solid #000000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    width: 420px;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    outline: none;
+    background-color: transparent;
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    transition: 0.3s;
+
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    transform: translateY(50%);
+    color: #000000;
+    font-size: 25px;
+}
+
+.input-box input::placeholder{
+    transition: 0.3s;
+    color: #919191;
+}
+
+.input-box input:hover{
+    transition: 0.3s;
+    border: 1px solid #000000;
+}
+
+.input-box input:hover::placeholder{
+    transition: 0.3s;
+    color: #2c2c2c;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-forgot label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember-forgot label input{
+    margin: 2px;
+}
+
+.remember-forgot a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+form .btn{
+    margin: 20px auto 0px auto;
+    display: block;
+    padding: 5px;
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+.container .btn::placeholder{
+    color: #000000;
+}
+
+form .register{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+form .register a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+form .register a:hover{
+    text-decoration: underline;
+}
