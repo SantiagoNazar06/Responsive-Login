@@ -23,6 +23,7 @@ body .navbar{
     align-items: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, .6);
     margin: 0 0 20px;
+    position: relative;
 }
 
 .navbar a{
@@ -39,18 +40,83 @@ body .navbar{
     background-color: #ffffff;
     width: 35px;
     outline: none;
+    border: 1px solid #ffffff;
     border-radius: 50px;
 }
 
-.body{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.sub-menu-wrap.open-menu{
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    background-color: #383838;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 15%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .6);  
 }
 
-.body .dv{
-    width: 30%;
-    backdrop-filter: blur(10px);
-    box-shadow: rgba(0, 0, 0, .3);
+.sub-menu-wrap{
+    display: none;
 }
+
+.profile-photo-and-name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img-profile-display{
+    background-color: #ffffff;
+    width: 40px;
+    border: 1px solid #ffffff;
+    outline: none;
+    border-radius: 50px;
+}
+
+.user-name{
+    color: #ffffff;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.sub-menu-wrap.open-menu hr{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: #ffffff;
+    height: 1px;
+}
+
+.sub-menu-wrap ul{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navbar .sub-menu-wrap ul a{
+    text-decoration: none;
+}
+
+.sub-menu-wrap ul li{
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #707070;
+}
+
+.sub-menu-wrap ul li:hover{
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: #ffffff;  
+}
+
+
+.sub-menu-wrap ul li i{
+    padding: 5px;
+}
+
